@@ -9,7 +9,7 @@ It runs on two machines:
 - **The PC (local mode)** does the heavy work when the creator turns it on: discovery, AI, sending.
 - **The tracker (online mode)** is a small always-on machine that only tracks the inbox and keeps the records, so tracking continues while the PC is off.
 
-Full design: [docs/](../docs/README.md).
+Full design: [docs/](../docs/) (index in the [README](../README.md#design-documents)).
 
 ## Goals
 

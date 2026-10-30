@@ -76,3 +76,4 @@ In parallel (owner, outside the code): send 20–30 emails with the v0 kit to me
 - Created this `context/` folder with real specs for M0–M2. No application code changed.
 - Owner chose Apache-2.0. Added `LICENSE`, `NOTICE` and README credits; updated docs 03, 08 and 09 and spec 01 to match. Pushed (`eb7085e`); GitHub's API detects the license as `Apache-2.0`.
 - Added root `CLAUDE.md` with the AI reading order pointing into `context/`.
+- Owner asked for a single README. Merged `docs/README.md` (design index, diagram, key decisions) and `context/README.md` (file descriptions, reading order, update rules) into the root `README.md`, deleted both, and fixed links.
