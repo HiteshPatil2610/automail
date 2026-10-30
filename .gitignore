@@ -1,0 +1,9 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Discovery output and secrets
+brands_*.csv
+.env
