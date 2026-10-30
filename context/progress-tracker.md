@@ -2,7 +2,7 @@
 
 ## Current goal
 
-Finish **M0: open-source foundation** ([specs/01-open-source-foundation.md](specs/01-open-source-foundation.md)) so the repository is legally open source, then start **M1: tracker service and auth** ([specs/02-tracker-service-and-auth.md](specs/02-tracker-service-and-auth.md)).
+Finish **M0: open-source foundation** ([specs/01-open-source-foundation.md](specs/01-open-source-foundation.md)). The license part is done; the Python project skeleton and CI remain. Then start **M1: tracker service and auth** ([specs/02-tracker-service-and-auth.md](specs/02-tracker-service-and-auth.md)).
 
 In parallel (owner, outside the code): send 20–30 emails with the v0 kit to measure real reply rates, and record one or two sample review videos.
 
@@ -17,6 +17,7 @@ In parallel (owner, outside the code): send 20–30 emails with the v0 kit to me
 | 2026-10-30 | Pushed v0 kit to GitHub (`b76d201`) and the link-filter fix (`44e7a07`) | `git push` succeeded |
 | 2026-10-31 | Design docs `docs/01`–`09` for the fully open-source v1 (two-node: PC + tracker) with web research | Cross-links checked by script |
 | 2026-10-31 | `context/` folder: main context files and specs 01–03 | Cross-links checked by script |
+| 2026-10-31 | Apache-2.0 `LICENSE` (official text), `NOTICE` with the Crawl4AI attribution, README license badge, Credits and License sections (spec 01, requirements 1–3) | LICENSE downloaded from apache.org, SHA-256 `cfc7749b…3d30` matches the standard text; attribution wording compared with Crawl4AI's LICENSE |
 
 ## In progress
 
@@ -28,7 +29,6 @@ In parallel (owner, outside the code): send 20–30 emails with the v0 kit to me
 
 | Blocker | Impact | Owner action |
 |---|---|---|
-| No `LICENSE` in the repo | Not legally open source; no one may reuse the code | Confirm Apache-2.0 (recommended) or choose another license |
 | Tracker host not chosen | Blocks M3 (deploy online) | Decide: spare home device vs Oracle Always Free |
 | No real-world reply data | Unknown whether brands reply at all | Run the v0 kit on 20–30 brands |
 
@@ -43,7 +43,7 @@ In parallel (owner, outside the code): send 20–30 emails with the v0 kit to me
 | 2026-10-31 | SearXNG runs on the PC (home IP), not the server | [docs/03 D3](../docs/03-technology-choices.md) |
 | 2026-10-31 | Ollama + Qwen3 8B replaces Gemini as the default | [docs/03 D5](../docs/03-technology-choices.md) |
 | 2026-10-31 | n8n, NocoDB, Docker Desktop excluded (not OSI open source) | [docs/03](../docs/03-technology-choices.md) |
-| 2026-10-31 | Proposed project license: Apache-2.0 (awaiting owner confirmation) | [docs/08](../docs/08-licensing-and-compliance.md) |
+| 2026-10-31 | Project license: Apache-2.0, confirmed by owner | [docs/08](../docs/08-licensing-and-compliance.md) |
 
 ## Testing results
 
@@ -57,8 +57,8 @@ In parallel (owner, outside the code): send 20–30 emails with the v0 kit to me
 
 ## Next steps
 
-1. Owner confirms the project license, then complete spec 01.
-2. Add the Crawl4AI attribution line to README and NOTICE (part of spec 01).
+1. Finish spec 01: `pyproject.toml` + `uv`, package skeleton, CI with lint, types, tests, import rules and license check, CONTRIBUTING / CODE_OF_CONDUCT / SECURITY, `.gitattributes`.
+2. Confirm the copyright holder name in `NOTICE` ("Hitesh Patil and contributors").
 3. Spec 02: tracker skeleton with database, API token and dashboard login.
 4. Spec 03: first send-and-track slice using a fake SMTP server and `.eml` fixtures, then one live test to the owner's own second address.
 5. Owner: run the v0 kit on a small real batch and record reply rates here.
@@ -74,3 +74,4 @@ In parallel (owner, outside the code): send 20–30 emails with the v0 kit to me
 ### 2026-10-31
 - Owner asked for a fully open-source design with local heavy work and online tracking. Researched licenses, free hosting, Gmail access, IMAP tooling and local models; wrote `docs/` (10 files).
 - Created this `context/` folder with real specs for M0–M2. No application code changed.
+- Owner chose Apache-2.0. Added `LICENSE`, `NOTICE` and README credits; updated docs 03, 08 and 09 and spec 01 to match.

@@ -65,7 +65,7 @@ There's no truly open search index with good coverage of small brands, so SearXN
 
 ### D4. Crawler: Crawl4AI (keep from v0)
 
-Apache-2.0 **with an added attribution requirement**. Every distribution or public use must credit it with this statement: *"This product includes software developed by UncleCode (https://x.com/unclecode) as part of the Crawl4AI project"*. The credit must be in a prominent place (NOTICE, README, credits page or CLI help). **The v0 README does not include it yet. That is a required fix** (see [Roadmap](09-roadmap.md)).
+Apache-2.0 **with an added attribution requirement**. Every distribution or public use must credit it with this statement: *"This product includes software developed by UncleCode (https://x.com/unclecode) as part of the Crawl4AI project"*. The credit must be in a prominent place (NOTICE, README, credits page or CLI help). It's in the README and `NOTICE` (added 2026-10-31). v1 also adds it to `outreach --help`.
 
 It renders JavaScript (many Shopify brand sites need this), honours `check_robots_txt`, and caches pages. Plain `httpx` is a lighter fallback for static sites.
 
@@ -99,7 +99,7 @@ The tracker's API and dashboard are **never exposed to the public internet**. Th
 
 Self-hosted ntfy on the tracker pushes "Keychron replied" to your phone. It has open-source Android and web clients. Email-to-self alerts were rejected: they would mix with the inbox being tracked.
 
-### D10. Project license: Apache-2.0
+### D10. Project license: Apache-2.0 (decided 2026-10-31)
 
 See [Licensing](08-licensing-and-compliance.md#project-license).
 

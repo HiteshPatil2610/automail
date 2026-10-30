@@ -1,5 +1,9 @@
 # OutreachAI starter kit (free)
 
+[![License: Apache-2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
+
+> This is the **v0 starter kit**. The fully open-source v1 is being designed in [docs/](docs/README.md), and contributor context lives in [context/](context/README.md).
+
 Two parts:
 
 | Part | What it does | Runs where |
@@ -93,3 +97,13 @@ Rows that cannot be sent show `needs: …` (missing info), `blocked: suppressed`
 - Reply detection reads Gmail threads. Read the actual replies in Gmail, and set Status to `interested`, `declined` and so on by hand if you like.
 - Opt-out detection is a keyword match. It can miss polite declines, so add those domains to **Suppression** yourself.
 - Free Gemini limits change. Check them in Google AI Studio if runs start failing.
+
+## Credits
+
+This product includes software developed by UncleCode (https://x.com/unclecode) as part of the Crawl4AI project
+
+See [NOTICE](NOTICE) for all third-party attributions.
+
+## License
+
+Licensed under the [Apache License, Version 2.0](LICENSE). Copyright 2026 Hitesh Patil and contributors.

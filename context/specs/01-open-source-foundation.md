@@ -1,6 +1,6 @@
 # Spec 01: Open-source foundation (M0)
 
-**Status:** Not started · **Milestone:** M0 · **Depends on:** owner confirming the license
+**Status:** In progress (requirements 1–3 done 2026-10-31; 4–10 to do) · **Milestone:** M0 · **License:** Apache-2.0, confirmed by owner 2026-10-31
 
 ## Feature purpose
 
@@ -49,8 +49,8 @@ None at runtime. Repository: CI runs with read-only `contents` permission.
 
 ## Acceptance criteria
 
-- [ ] GitHub shows "Apache-2.0 license" (or the chosen one) on the repo page.
-- [ ] `NOTICE` and README contain the exact Crawl4AI attribution.
+- [ ] GitHub shows "Apache-2.0 license" on the repo page (check after push).
+- [x] `NOTICE` and README contain the exact Crawl4AI attribution.
 - [ ] `uv sync && uv run pytest` passes on a fresh clone on Windows and Linux.
 - [ ] CI is green on `main` and runs all five checks.
 - [ ] Adding a dependency with a non-OSI license makes CI fail (tested once on a throwaway branch, then removed).

@@ -4,7 +4,7 @@
 
 ## Project license
 
-**The repository has no LICENSE file yet. Until it has one, it is not legally open source**: by default nobody may reuse the code, even though it is public. Adding a license is the first item on the [roadmap](09-roadmap.md).
+**Decided 2026-10-31: Apache-2.0.** The repository has the official license text in `LICENSE` and the third-party credits (including Crawl4AI's required attribution) in `NOTICE`. The comparison below records why.
 
 | License | Effect | Fit |
 |---|---|---|
@@ -12,13 +12,13 @@
 | MIT | Permissive and shortest | Fine, but no patent grant and no NOTICE convention |
 | AGPL-3.0 | Anyone who runs a modified version as a network service must publish their changes | Choose this if you want to stop closed SaaS forks; it can put off some contributors |
 
-Recommendation: **Apache-2.0** with a `NOTICE` file.
+Chosen: **Apache-2.0** with a `NOTICE` file.
 
 ## Dependency licenses and duties
 
 | Dependency | License | Duty for us |
 |---|---|---|
-| Crawl4AI | Apache-2.0 + attribution clause | **Must** show: "This product includes software developed by UncleCode (https://x.com/unclecode) as part of the Crawl4AI project" in the README or NOTICE, and ideally in `outreach --help`. **v0 does not do this yet** |
+| Crawl4AI | Apache-2.0 + attribution clause | **Must** show: "This product includes software developed by UncleCode (https://x.com/unclecode) as part of the Crawl4AI project" in the README or NOTICE, and ideally in `outreach --help`. Done in README and NOTICE (2026-10-31); add to `outreach --help` in v1 |
 | SearXNG | AGPL-3.0 | We run it unmodified as a separate service, so no source-sharing duty arises. If we ever modify and expose it, we publish the changes |
 | Ollama | MIT | Keep the notice if we bundle it (we don't) |
 | Qwen3 / Granite models | Apache-2.0 (verify each model card) | Note the model and its license in the docs; we don't ship the weights |

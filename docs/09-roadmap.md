@@ -6,8 +6,8 @@
 |---|---|---|
 | `apps-script/Code.gs` | Working code. Logic tested in Node; **not yet run in Google** | Our code is open, but it runs only on Google's proprietary Apps Script and Sheets |
 | `discovery/discover.py` | Tested on 15 real keyboard brands with `--no-llm` (10 emails found, about 2 min). Gemini path untested | Crawl4AI is open; the default brand search uses Gemini (proprietary) |
-| LICENSE | **Missing** | Not legally open source yet |
-| Crawl4AI attribution | **Missing** | Required by Crawl4AI's license |
+| LICENSE | Apache-2.0, added 2026-10-31 | Legally open source |
+| Crawl4AI attribution | In README and NOTICE, added 2026-10-31 | Meets Crawl4AI's license |
 
 v0 stays useful as a **quick start** while v1 is built. Its code moves to `legacy/` when v1 reaches M4.
 
@@ -39,7 +39,6 @@ A rough estimate is 6–9 weekends of part-time work. That's a planning figure, 
 |---|---|---|
 | Tracker host | Home device vs Oracle A1 vs AMD micro | M3 |
 | Home-tracker networking | Port-forward WireGuard vs tracker dials out to PC | M3 |
-| Project license | Apache-2.0 (recommended) vs AGPL-3.0 | M0 |
 | Keep v0 Apps Script as an optional "Google adapter"? | Keep in `legacy/` vs delete | M4 |
 | Reply classifier | Rules only vs a small local model on the tracker | M5 |
 | App-password retirement risk | Add an XOAUTH2 adapter now vs when Google announces it | M2 |
