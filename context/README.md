@@ -31,7 +31,7 @@ Current specs:
 
 ## Reading order
 
-For any task:
+The same order is in the root [CLAUDE.md](../CLAUDE.md), which AI coding assistants load automatically. Keep the two in step. For any task:
 
 1. [project-overview.md](project-overview.md)
 2. [architecture.md](architecture.md)

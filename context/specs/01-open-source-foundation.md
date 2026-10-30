@@ -49,7 +49,7 @@ None at runtime. Repository: CI runs with read-only `contents` permission.
 
 ## Acceptance criteria
 
-- [ ] GitHub shows "Apache-2.0 license" on the repo page (check after push).
+- [x] GitHub shows "Apache-2.0 license" on the repo page (GitHub API reported `Apache-2.0` on 2026-10-31).
 - [x] `NOTICE` and README contain the exact Crawl4AI attribution.
 - [ ] `uv sync && uv run pytest` passes on a fresh clone on Windows and Linux.
 - [ ] CI is green on `main` and runs all five checks.
