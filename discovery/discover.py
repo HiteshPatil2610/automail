@@ -300,8 +300,8 @@ def summarise(crawl):
             host = site_domain(href)
             if any(host == s or host.endswith('.' + s) for s in SOCIAL_HOSTS):
                 socials.add(href)
-            elif re.search(r'/products?/', href):
-                continue  # a product page, not a program page
+            elif re.search(r'/(products?|blogs?|news|press)/', href) or href == f'https://{host}':
+                continue  # product pages, articles and homepages are not program pages
             elif PROGRAM_LINK.search(href) or PROGRAM_LINK.search(label):
                 if host == domain or 'affiliate' in href.lower() or 'creator' in href.lower():
                     programs.add(href)
